@@ -67,6 +67,30 @@ This project creates an elegant digital invitation card for an Annual Alumni Mee
                 <p><strong>Venue:</strong> College Auditorium</p>
             </div>
         </div>
+
+        <div class="agenda-section">
+            <h4>Event Agenda</h4>
+            <div class="agenda-item">
+                <span class="time">6:00 PM</span>
+                <span class="activity">Welcome & Registration</span>
+            </div>
+            <div class="agenda-item">
+                <span class="time">6:30 PM</span>
+                <span class="activity">Networking Session</span>
+            </div>
+            <div class="agenda-item">
+                <span class="time">7:30 PM</span>
+                <span class="activity">Cultural Program</span>
+            </div>
+            <div class="agenda-item">
+                <span class="time">8:30 PM</span>
+                <span class="activity">Awards Ceremony</span>
+            </div>
+            <div class="agenda-item">
+                <span class="time">9:00 PM</span>
+                <span class="activity">Dinner & DJ Night</span>
+            </div>
+        </div>
         
         <div class="rsvp-section">
             <p><strong>Contact:</strong> Nanda Kishore - 9324440486</p>
@@ -220,7 +244,48 @@ strong {
     background: linear-gradient(45deg, #20c997, #28a745);
 }
 
-/* Responsive Design */
+.agenda-section {
+    background-color: #fff3cd;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+    border-left: 4px solid #ffc107;
+}
+
+.agenda-section h4 {
+    color: #856404;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.agenda-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #ffeaa7;
+}
+
+.agenda-item:last-child {
+    border-bottom: none;
+}
+
+.time {
+    font-weight: bold;
+    color: #d63031;
+    font-size: 14px;
+    min-width: 80px;
+}
+
+.activity {
+    color: #856404;
+    font-size: 14px;
+    text-align: right;
+    flex: 1;
+}
+
 @media (max-width: 500px) {
     .invite-card {
         margin: 10px;
@@ -241,12 +306,30 @@ strong {
         margin-right: 0;
         margin-bottom: 3px;
     }
+    
+    .agenda-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .time {
+        margin-bottom: 5px;
+        min-width: auto;
+    }
+    
+    .activity {
+        text-align: center;
+    }
 }
 ```
 
 ## Output:
 
-![image](https://github.com/user-attachments/assets/64133ba8-c92f-434f-9037-b43b63ae620d)
+![image](https://github.com/user-attachments/assets/7adf9966-bc0c-4868-8495-72678dea2503)
+
+![image](https://github.com/user-attachments/assets/12aa5a53-8245-47b4-abdc-46ac17cbfb1f)
+
 
 ## Result:
 
